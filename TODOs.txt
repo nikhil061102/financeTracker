@@ -1,0 +1,8 @@
+usecontext to take name and email from login/signup and use it in mysidebars :- 
+1. to display it in below name and symbol
+2. send emails for reminder of limit. only checked with new expense (if 'type=EXPENSE condition in newenterdialog.jsx POST request' or 'if type=EXPENSE condition in table.jsx PUT request' or 'when limit changed'. how it will go :-
+	i. call GET /txns?type=EXPENSE & sum up all the expenses 
+	ii. get limit of user by GET '/user/getLimit/' and get limit of user 
+	iii. POST {email, limit, totalexpense} in req body. 
+and done :)
+3. set mode light or dark 
